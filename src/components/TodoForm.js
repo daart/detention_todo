@@ -8,10 +8,13 @@ const prestineForm = {
 };
 
 class Todo {
-  constructor(txt) {
-    this.id = Math.random().toString().slice(2, 10);
+  id = Math.random().toString().slice(2, 10);
+  
+  txt;
+  completed = false;
+
+  constructor(txt = "new todo") {
     this.txt = txt;
-    this.completed = false;
   }
 }
 

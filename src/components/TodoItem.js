@@ -4,8 +4,7 @@ import { connect } from 'react-redux';
 import { toggleTodo, removeTodo } from './../reducers/todos';
 
 const Todo = ({ toggleTodo, removeTodo, todo }) => {
-  const { txt, completed, id } = todo;
-  console.log('tododododo ', todo);
+  const { txt, id } = todo;
 
   return (
     <li className="todoItem">
